@@ -9,6 +9,8 @@ var p1score=0;
 var p2score=0;
 var gameover=false;
 var wins=5;
+
+//for palyer 1
 p1.addEventListener("click",function(){
   if(!gameover){
   p1score++;
@@ -19,6 +21,8 @@ p1.addEventListener("click",function(){
     sp1.textContent=p1score;
 }});
 
+//For Player 2
+
 p2.addEventListener("click",function(){
   if(!gameover){
   p2score++;
@@ -28,6 +32,9 @@ p2.addEventListener("click",function(){
       }
     sp2.textContent=p2score;
 }});
+
+// For resetting
+
 function reset(){
    p1score=0;
   p2score=0;
@@ -40,6 +47,8 @@ function reset(){
 
 re.addEventListener("click",function(){
  reset();});
+
+//for any input
 
 ip.addEventListener("change",function(){
   w.textContent=ip.value;
